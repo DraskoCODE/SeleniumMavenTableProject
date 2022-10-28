@@ -29,6 +29,10 @@ public class TableTest extends BaseTest {
         TablePage tablePage = new TablePage(driver);
         List<HashMap<String, String>> tableMap =  tablePage.getTableData("Email");
         System.out.println("TEST");
+        System.out.println(tablePage.getCellData("First Name", 1));
+        System.out.println(tablePage.getCellData("First Name", 2));
+        System.out.println(tablePage.getCellData("Due", 2));
+
     }
 
 }
